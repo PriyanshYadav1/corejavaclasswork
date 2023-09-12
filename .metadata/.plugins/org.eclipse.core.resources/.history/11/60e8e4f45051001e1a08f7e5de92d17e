@@ -1,0 +1,8 @@
+
+public class Day4_que3 {
+
+	public static void main(String[] args) {
+		System.out.println("Menu \n1 Samosa \n2 Dal Soup \n3 Curry \n4 Idli \n5 Poha \n6 Vada \n7 Dosa \n8 Medu vada \n9 Chai \n10 Coffee");
+	}
+
+}

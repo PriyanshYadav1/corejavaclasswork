@@ -1,0 +1,77 @@
+package com.java.initial_project.service;
+import java.util.Scanner;
+class Mobile
+{
+	private String name,manufacturer,os;
+	private float price;
+	private int ramsize;
+	
+	Mobile()
+	{
+		this("Genric","Unknown","OS",0f,0);
+	}
+	
+	Mobile(String name, String manufacturer,String os,float price, int ramsize)
+	{
+	this.name = name;
+	this.manufacturer = manufacturer;
+	this.price = price;
+	this.os=os;
+	this.ramsize=ramsize;
+	}
+	 void disp ()
+	{
+		 System.out.println("Name = "+this.name+" Manufacturer = "+this.manufacturer+" OS = "+this.os+" Price ="+this.price+" Ramsize"+this.ramsize);
+	}
+	void accept ()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter name of mobile phone");
+		this.name = sc.next();
+		System.out.println("Enter name of manufacturer");
+		this.manufacturer = sc.next();
+		System.out.println("Enter price of mobile");
+		this.price = sc.nextFloat();
+		System.out.println("Enter name of OS");
+		this.os = sc.next();
+		System.out.println("Enter ramsize");
+		this.ramsize = sc.nextInt();
+		// its name is same as class name and it does not have any return type 
+		// It is used to initialize the fields of the class whenever we create object
+		// Constructor call is implicit call
+		sc.close();
+		
+	}
+	void setname(String name)
+	{
+	this.name = name;
+	}
+	void setmanufacturer(String manufac)
+	{
+		this.manufacturer = manufac;
+	}
+	void setprice(float price)
+	{
+		this.price = price;
+	}
+	void setOS(String os)
+	{
+		this.os = os;
+	}
+	void setramsize(int ramsize)
+	{
+		this.ramsize = ramsize;
+	}
+	}
+class caller
+{
+	public static void main(String[]args)
+	{
+		Mobile m1 = new Mobile();
+		Mobile m2 = new Mobile("Mi","Xaiomi","Android",20000,2000);
+		m1.disp();
+		m1.accept();
+		m1.disp();
+		m2.setname("abc");
+	}
+}

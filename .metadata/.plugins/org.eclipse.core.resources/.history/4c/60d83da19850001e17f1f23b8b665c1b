@@ -1,0 +1,58 @@
+package P2;
+import java.util.Scanner;
+public class laptop {
+ String name,manufacturer,os;
+ private int price,ramsize;
+ 
+ public laptop()
+ {
+	 this("Evobook","Samsung","ChromeOS",9999,7767);
+ }
+ public laptop(String name,String manufacturer,String os,int price,int ramsize)
+ {
+	 this.name = name;
+	 this.manufacturer = manufacturer;
+	 this.os = os;
+	 this.price = price;
+	 this.ramsize = ramsize;
+ }
+ public void disp()
+ {
+	System.out.println("Name ="+ this.name+"manufacturer ="+this.manufacturer+"os = "+this.os+"price ="+this.price+"ramsize ="
+			+this.ramsize); 
+ }
+ void setname(String name)
+	{
+	this.name = name;
+	}
+ void setmanufacturer(String m)
+ {
+	 this.manufacturer = m;
+ }
+ void setos(String o)
+ {
+	 this.os = os;
+ }
+ void setprice(int p)
+ {
+	this.price = p; 
+ }
+ void ramsize (int r) 
+ {
+	 this.ramsize = r;
+ }
+ public void accept () 
+ {
+	 Scanner sc = new Scanner(System.in);
+	 System.out.println("Enter Name of Product");
+	 this.name = sc.next();
+	 System.out.println("Enter Name of Manufacturer");
+	 this.manufacturer = sc.next();
+	 System.out.println("Enter OS Name");
+	 this.os = sc.next();
+	 System.out.println("Enter price");
+	 this.price = sc.nextInt();
+	 System.out.println("Enter ramsize");
+	 this.price = sc.nextInt();
+ }
+}

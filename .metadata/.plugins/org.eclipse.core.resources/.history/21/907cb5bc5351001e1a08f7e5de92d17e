@@ -1,0 +1,96 @@
+import java.util.Scanner;
+public class Day4_que3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int i=0,amount=0,q=1;
+		System.out.println("Menu \n1 Samosa Rs10\n2 Dal Soup Rs30\n3 Curry Rs45\n4 Idli Rs60 \n5 Poha Rs45\n6 Vada Rs10\n7 Dosa Rs80 \n8 Medu vada Rs\n9 Chai \n10 Coffee \n0 Exit.....");
+		i=sc.nextInt();
+		while (i!=11)
+		{
+			switch (i)
+			{
+			case 1:
+			{
+				System.out.println("You have selected Samosa now select quantity");
+				q=1;
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 2:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = 1;
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 3:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = 1;
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 4:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = 1;
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 5:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = 1;
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 6:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 7:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 8:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 9:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 10:
+			{
+				System.out.println("You have selected  now select quantity");
+				q = sc.nextInt();
+				q = q*10;
+				amount += q;
+			}
+			case 11:
+			{
+				break;
+			}
+			}
+		}
+	}
+
+}

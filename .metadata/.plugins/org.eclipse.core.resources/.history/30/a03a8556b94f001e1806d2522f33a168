@@ -1,0 +1,23 @@
+package com.java.initial_project;
+
+class mobile
+{
+	private String name,manufacturer,os;
+	private float price;
+	private int ramsize;
+	
+	mobile()
+	{
+		this("Genric","Unknown","OS",0f,0);
+	}
+	
+	mobile(String name, String manufacturer,String os,float price, int ramsize)
+	{
+	this.name = name;
+	this.manufacturer = manufacturer;
+	this.price = price;
+	this.os=os;
+	this.ramsize=ramsize;
+	}
+	
+	}

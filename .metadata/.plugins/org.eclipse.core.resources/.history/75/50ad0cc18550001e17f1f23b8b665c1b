@@ -1,0 +1,23 @@
+package com.java.initial_project.service;
+import java.util.Scanner;
+public class laptop {
+ String lname,manufacturer,os;
+ private int lprice,lramsize;
+ 
+ laptop()
+ {
+	 this("Evo Book","Samsung","Windows",9999,7767);
+ }
+ laptop(String name,String manufacturer,String os,int price,int ramsize)
+ {
+	 this.lname = name;
+	 this.manufacturer = manufacturer;
+	 this.os = os;
+	 this.lprice = price;
+	 this.lramsize = ramsize;
+ }
+ void disp()
+ {
+	System.out.println(); 
+ }
+}

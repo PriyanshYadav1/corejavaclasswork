@@ -1,0 +1,32 @@
+package P1;
+import java.util.Scanner;
+public class Mobile {
+ String name,manufacturer,os;
+ private int price,ramsize;
+ 
+ Mobile()
+ {
+	 this("S21","Samsung","Android",9999,7767);
+ }
+ Mobile(String name,String manufacturer,String os,int price,int ramsize)
+ {
+	 this.name = name;
+	 this.manufacturer = manufacturer;
+	 this.os = os;
+	 this.price = price;
+	 this.ramsize = ramsize;
+ }
+ void disp()
+ {
+	System.out.println("Name ="+ this.name+"manufacturer ="+this.manufacturer+"os = "+this.os+"price ="+this.price+"ramsize ="
+			+this.ramsize); 
+ }
+}
+class caller
+{
+	public static void main(String args[])
+	{
+		Mobile m1 = new Mobile();
+		
+	}
+}

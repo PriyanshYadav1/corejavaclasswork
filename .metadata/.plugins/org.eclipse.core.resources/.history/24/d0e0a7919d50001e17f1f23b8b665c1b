@@ -1,0 +1,36 @@
+package P3;
+
+import java.util.Scanner;
+
+import P1.Mobile;
+import P2.laptop;
+
+public class main {
+	public static void main(String args[])
+	{
+		int choice = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 1 for mobile, 2 for Laptop or 0 to exit");
+		choice = sc.nextInt();
+		switch (choice) 
+		{
+		case 0:
+			break;
+		case 1:
+			Mobile m1 = new Mobile();
+			m1.disp();
+			Mobile m2 = new Mobile();
+			m2.accept();
+			m2.disp();
+		case 2:
+		{
+			laptop l1 = new laptop();
+			l1.disp();
+			laptop l2 = new laptop();
+			l2.accept();
+			l2.disp();
+		}
+		}
+			
+	}
+}

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class conversion {
+	public static void main (String [] args)
+	{
+		System.out.println("Enter an Integer value");
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		System.out.println( "Binary = "+Integer.toBinaryString(i)+"\n");
+		
+	}
+
+}

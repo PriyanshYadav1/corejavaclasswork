@@ -1,0 +1,17 @@
+package P3;
+
+public class main {
+	public static void main(String args[])
+	{
+		int choice = 0;
+		System.out.println("Enter 1 for mobile, 2 for Laptop or 0 to exit");
+		switch (choice) 
+		{
+		case 0:
+			break;
+		case 1:
+			
+		}
+			
+	}
+}
